@@ -9,7 +9,7 @@ body{
 }
 
 header{
-   margin: 20px 10px;
+   margin: 20px 30px;
 }
 
 h1,
@@ -30,7 +30,7 @@ main{
 }
 
 .instructions{
-    
+    text-align: center;
 }
 
 h3{
@@ -56,13 +56,13 @@ button{
 }
 
 .questions{
-    
+    text-align: center;
 }
 
 .end{
-
+    text-align: center;
 }
 
 .highscores{
-    
+    text-align: center;
 }
