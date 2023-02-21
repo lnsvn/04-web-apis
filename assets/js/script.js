@@ -1,8 +1,26 @@
 // Variables
+// Header Elements 
+var viewHighscoresEl = document.getElementById("#view-highscores");
+var timerEl = document.getElementById("#timer");
+
+// Container Elements
 var instructContainerEl = document.getElementById("#instruction-container");
 var questionContainerEl = document.getElementById("#question-container");
 var endContainerEl = document.getElementById("#end-container");
 var highscoreContainerEl = document.getElementById("#highscore-container");
+
+// Button Elements
+var startQuizBtn = document.getElementById("#start-btn");
+var submitScoreBtn = document.getElementById("#");
+var goBackBtn = document.getElementById("#go-back-btn");
+var clearScoresBtn = document.getElementById("#clear-scores-btn");
+
+// Game Elements (questions, answers, timer, score, logged scores)
+var questionEl = document.getElementById("#question");
+var answerChoicesEl = document.getElementById("#answer-choice-btns");
+var initialsFormEL = document.getElementById("#initials-form");
+var highscoresListEl = document.getElementById("#high-scores-li");
+
 
 // Quiz questions array
 var quizQuestions = [

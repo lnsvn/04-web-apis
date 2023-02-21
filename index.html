@@ -25,15 +25,25 @@
         </section>
 
         <section id="question-container" class="questions">
-            
+            <div id="question"></div>
+            <div id="answer-choice-btns" class="answer-choices"></div>
         </section>
 
         <section id="end-container" class="end">
-            
+            <h3>Game Over</h3>
+            <form id="initials-form" class="initials">
+                <p>Enter Initials: 
+                    <input type="text" name="initials" id="initials" class="initials-text"/>
+                    <button type="submit" id="submit-btn" class="submit-score">Submit</button>
+                </p>
+            </form>
         </section>
 
         <section id="highscore-container" class="highscores">
-            
+            <h3>High Scores</h3>
+            <ol id="high-scores-li" class="scores"></ol>
+            <button id="go-back-btn" class="go-back">Go Back</button>
+            <button id="clear-scores-btn" class="clear-scores">Clear scores</button>
         </section>
 
     </main>
