@@ -11,7 +11,7 @@ var highscoreContainerEl = document.getElementById("#highscore-container");
 
 // Button Elements
 var startQuizBtn = document.getElementById("#start-btn");
-var submitScoreBtn = document.getElementById("#");
+var submitScoreBtn = document.getElementById("#submit-btn");
 var goBackBtn = document.getElementById("#go-back-btn");
 var clearScoresBtn = document.getElementById("#clear-scores-btn");
 
@@ -57,3 +57,53 @@ var quizQuestions = [
         choices: [{choice: '1. var colors = 1. red, 2. white, 3. blue'}, {choice: '2. var colors = ("red"), ("white"), ("blue")'}, {choice: '3. var colors = "red", "white", "blue"'}, { choice: '4. var colors = ["red", "white", "blue"]'}]
     },
 ];
+
+function setTime(){
+
+}
+
+function setQuestion(){
+
+}
+
+function startGame(){
+
+}
+
+function displayQuestion(){
+    
+}
+
+function answerCheck(){
+
+}
+
+function resetAnswers(){
+
+}
+
+function showScore(){
+
+}
+
+function createHighScore(){
+
+}
+
+function saveHighScore(){
+
+}
+
+function displayHighScores(){
+
+}
+
+
+function restartGame(){
+
+}
+
+
+function clearScores(){
+
+}
