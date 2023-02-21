@@ -1,11 +1,7 @@
 *{
-    background-color: #f0f6ff;
+    background-color: #c7d9e5;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
-}
-
-body{
-
 }
 
 header{
@@ -29,7 +25,10 @@ main{
     margin-right: auto;
 }
 
-.instructions{
+.instructions,
+.questions,
+.end,
+.highscores{
     text-align: center;
 }
 
@@ -42,27 +41,36 @@ button{
     font-weight: bold;
 }
 
-.start-btn:hover{
-    background-color: #fff;
+.start-btn,
+.submit-score,
+.go-back,
+.clear-scores{
+    background-color: #dfc7e5;
 }
 
-.start-btn:active{
+.start-btn:hover,
+.submit-score:hover,
+.go-back:hover,
+.clear-scores:hover{
+    background-color: #ebdcef;
+}
+
+.start-btn:active,
+.submit-score:active,
+.go-back:active,
+.clear-scores:active{
     border: 0px;
     background-color: #fff;
 }
 
-.start-btn:focus{
+.start-btn:focus,
+.submit-score:focus,
+.go-back:focus,
+.clear-scores:focus{
     border: auto;
 }
 
-.questions{
-    text-align: center;
-}
-
-.end{
-    text-align: center;
-}
-
-.highscores{
-    text-align: center;
+.initials-text{
+    background-color: #fff;
+    font-weight: bold;
 }
