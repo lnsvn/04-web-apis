@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
 
     <header>
-        <h1 id="view-highscores">View Highscores</h1>
-        <h2 id="timer" class="timer">Time: </h2>
+
+        <div>
+            <button id="view_scores_btn" class="btn">View Highscores</button>
+        </div>
+
+        <div>
+            <p id="timer"> Time: 60</p>
+        </div>
+
     </header>
 
     <main>
+        
+        <section id="intro_container" class="intro_container">
 
-        <section id="instruction-container" class="instructions">
-            <h3>Coding Quiz - JavaScript</h3>
-            <p>Try to answer these JavaScript code-related questions within the time limit. Incorrect answers will penalize your quiz time by 10 seconds. Good luck!</p>
-            <button id="start-btn" class="start-btn">Start Quiz</button>
+            <div id="introduction">
+                <h1>Coding Quiz - JavaScript</h1>
+                <p id="instruction">
+                    Try to answer these JavaScript code-related questions within the time limit. There are 8 questions and you have 60 seconds to complete the quiz. Incorrect answers will penalize your quiz time by 10 seconds, and correct answers will gain you 5 points. Good luck!
+                </p>                   
+                <button id="start_btn" class="btn">Start Quiz</button>
+            </div>
+
         </section>
 
-        <section id="question-container" class="questions">
-            <div id="question"></div>
-            <div id="answer-choice-btns" class="answer-choices"></div>
+        
+        <section id="question_container" class="question_container">
+            
+            <div>             
+                <h1 id = "question">Question</h1>
+                <ul>                
+                    <li><button id="choice1" class ="choice_btn" value="1">Choice 1</button></li>
+                    <li><button id="choice2" class ="choice_btn" value="2">Choice 2</button></li>
+                    <li><button id="choice3" class ="choice_btn" value="3">Choice 3</button></li>
+                    <li><button id="choice4" class ="choice_btn" value="4">Choice 4</button></li>
+                </ul>
+            <div>
+            
+            <div id="check_line">
+                <p>Correct or Wrong</p>
+            </div>
+            
         </section>
 
-        <section id="end-container" class="end">
-            <h3>Game Over</h3>
-            <form id="initials-form" class="initials">
-                <p>Enter Initials: 
-                    <input type="text" name="initials" id="initials" class="initials-text"/>
-                    <button type="submit" id="submit-btn" class="submit-score">Submit</button>
-                </p>
-            </form>
+        
+        <section id="submit_container" class="submit_container">
+            <h1 id="finish">Game Over</h1>            
+            <p id = "final_score">Your final score is: </p>
+            <p>Enter initials
+                <input id="initial">
+                
+                <button id="submit_btn" class="btn">Submit</button>
+            </p>               
         </section>
 
-        <section id="highscore-container" class="highscores">
-            <h3>High Scores</h3>
-            <ol id="high-scores-li" class="scores"></ol>
-            <button id="go-back-btn" class="go-back">Go Back</button>
-            <button id="clear-scores-btn" class="clear-scores">Clear scores</button>
+        
+        <section id ="highscore_container" class="highscore_container">
+            <h1>High Scores</h1>
+            <div id="highscores_li"><p>record</p></div><br><br>
+
+            <div>    
+                <button id="back_btn" class="btn">Go back</button>       
+                <button id="clear_btn" class="btn">Clear Highscores</button>
+            </div>
+            
         </section>
 
     </main>
-    
+
     <script src="./assets/js/script.js"></script>
 
-</body>
+  </body>
 
 </html>
