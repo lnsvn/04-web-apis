@@ -37,6 +37,10 @@ h1{
     font-size: 40px;
 }
 
+img{
+    width: 60%;
+}
+
 .question_container {
     display:flex;
     flex-direction: column;
