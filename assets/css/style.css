@@ -1,76 +1,114 @@
-*{
+* {
     background-color: #c7d9e5;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
 
 header{
-   margin: 20px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
 }
 
-h1,
-h2{
-    font-size: 20px;
-    display: inline;
-    line-height: 1px;
-}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+  }
 
-header h2{
-    float: right;
-}
-
-main{
-    width: 70%;
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.instructions,
-.questions,
-.end,
-.highscores{
-    text-align: center;
-}
-
-h3{
-    font-size: 40px;
 }
 
 p,
 button{
     font-weight: bold;
+    font-size: 20px;
 }
 
-.start-btn,
-.submit-score,
-.go-back,
-.clear-scores{
+h1{
+    font-size: 40px;
+}
+
+.question_container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+
+li {
+    margin-bottom: 10px;
+}
+
+.question_container, 
+.submit_container, 
+.highscore_container, 
+#check_line {
+    display:none;
+}
+
+.btn{
     background-color: #dfc7e5;
+    padding: 5px;
+  }
+  
+.btn:hover{
+  
+    background-color: #ebdcef;;
+  
 }
 
-.start-btn:hover,
-.submit-score:hover,
-.go-back:hover,
-.clear-scores:hover{
-    background-color: #ebdcef;
-}
-
-.start-btn:active,
-.submit-score:active,
-.go-back:active,
-.clear-scores:active{
+.btn:active{
     border: 0px;
     background-color: #fff;
 }
 
-.start-btn:focus,
-.submit-score:focus,
-.go-back:focus,
-.clear-scores:focus{
+.btn:focus{
     border: auto;
 }
 
-.initials-text{
-    background-color: #fff;
+#choice1{
+    background-color: #aed0ba;
+    padding: 5px;
+    margin: 8px;
+}
+
+#choice2{
+    background-color: #b2a5c5;
+    padding: 5px;
+    margin: 8px;
+}
+
+#choice3{
+    background-color: #eac695;
+    padding: 5px;
+    margin: 8px;
+}
+
+#choice4{
+    background-color: #eaaeae;
+    padding: 5px;
+    margin: 8px;
+}
+
+#initial{
     font-weight: bold;
+    background-color: #fff;
 }
