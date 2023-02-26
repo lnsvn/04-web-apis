@@ -22,7 +22,7 @@ The site starts on an instructional page for the game. The game starts when the 
 Finished site in action:
 ![alt text](./assets/images/usage.GIF)
 
-Finished site link: 
+Finished site link: https://lnsvn.github.io/04-web-apis/ 
 
 ## Credits
 
