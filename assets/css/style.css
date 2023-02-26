@@ -1,118 +1,144 @@
+/* Applies to all elements */
 * {
-    background-color: #c7d9e5;
-    font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
+    background-color: #c7d9e5; /* sets the background color of all (unless otherwise specified */
+    font-family: 'Courier New', Courier, monospace; /* sets the font family of all text */
+    box-sizing: border-box; /* includes any padding and/or border in an element's total width and height */
 }
+
+/* Start Body */
+
+body{
+    display: flex; /* turns body into a flexbox */
+    flex-direction: column; /* changes the box's flex direction to be vertical */
+    min-height: 100vh; /* sets the minimum height of the body relative to the viewport height */
+    justify-content: center; /* centers the body's content */
+}
+
+/* Start Header */
 
 header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 30px;
+    display: flex; /* turns header into a flexbox */
+    justify-content: space-between; /* spaces out items in header evenly */
+    align-items: center; /* aligns items in header to the center */
+    margin: 10px 20px; /* applies a margin around the header */
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-  }
+#timer{
+    color: #432c58;
+}
 
-main {
-    text-align: center;
-    justify-content: center;
-    flex: 1 0 auto;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+/* End Header */
+
+/* Start Main */
+
+main{
+    text-align: center; /* centers the text in main */
+    justify-content: center; /* centers main's content */
+    flex: auto; /* main grows and shrinks to fit its flex container */
+    width: 85%; /* sets the size of the content in main relative to the width of the page */
+    margin-left: auto; /* applies margin that shares an even amount of left over space to the left side of main */
+    margin-right: auto; /* applies margin that shares an even amount of left over space to the right side of main */
+}
+
+/* Start Sections */
+
+h1{
+    font-size: 40px; /* sets the font size of the first heading */
+    margin: 15px 0px 30px; /* applies margin around the first heading */
+    color: #0b4765;
 }
 
 p,
 button{
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: bold; /* sets the weight weight of the font in the paragraphs and buttons */
+    font-size: 20px; /* sets the font size of the paragraphs and buttons */
 }
 
-h1{
-    font-size: 40px;
+p{
+    color: #c46517;
 }
 
 img{
-    width: 60%;
+    width: 45%; /* sets the image size relative to the width of the page */
 }
 
-.question_container {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+.question_container{
+    display:flex; /* turns the question container into a flexbox */
+    flex-direction: column; /* changes the question container's flex direction to be vertical */
+    flex-wrap: wrap; /* items qc's flexbox break into multiple lines to prevent overflowing */
+    justify-content: center; /* centers the content in the question container */
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: baseline;
-    padding-left: 50px;
+ul{
+    list-style-type: none; /* removes bullet points from list */
+    display: flex; /* turns the ul into a flexbox */
+    justify-content: center; /* centers the ul's content */
+    flex-direction: column; /* changes the ul's flex dircetion to be vertical */
+    align-items: baseline; /* aligns items of list to the left */
+    padding-left: 50px; /* adds padding to the left of the list */
    }
 
-li {
-    margin-bottom: 10px;
+li{
+    margin-bottom: 10px; /* adds margin to the bottom of the list items */
 }
 
 .question_container, 
 .submit_container, 
 .highscore_container, 
-#check_line {
-    display:none;
+#check_line{
+    display: none; /* hides these elements until they're changed to display: block in JS*/
 }
 
 .btn{
-    background-color: #dfc7e5;
-    padding: 5px;
-  }
+    background-color: #dfc7e5; /* sets the colors of the buttons */
+    padding: 5px; /* adds padding to buttons */
+}
   
 .btn:hover{
-  
-    background-color: #ebdcef;;
-  
+    background-color: #ebdcef; /* changes the color of buttons when hovered over */
 }
 
 .btn:active{
-    border: 0px;
-    background-color: #fff;
+    border: 0px; /* removes border when buttons are clicked */
+    background-color: #fff; /* changes the color of buttons when clicked */
 }
 
 .btn:focus{
-    border: auto;
+    border: auto; /* adds the border of the buttons back after being clicked */
+}
+
+.choice_btn{
+    padding: 5px; /* applies padding to choice buttons */
+    margin: 8px; /* applies margin around choice buttons */
 }
 
 #choice1{
-    background-color: #aed0ba;
-    padding: 5px;
-    margin: 8px;
+    background-color: #aed0ba; /* sets the color of choice 1 button */
 }
 
 #choice2{
-    background-color: #b2a5c5;
-    padding: 5px;
-    margin: 8px;
+    background-color: #b2a5c5; /* sets the color of choice 2 button */
 }
 
 #choice3{
-    background-color: #eac695;
-    padding: 5px;
-    margin: 8px;
+    background-color: #eac695; /* sets the color of choice 3 button */
 }
 
 #choice4{
-    background-color: #eaaeae;
-    padding: 5px;
-    margin: 8px;
+    background-color: #eaaeae; /* sets the color of choice 4 button */
 }
 
 #initial{
-    font-weight: bold;
-    background-color: #fff;
+    font-weight: bold; /* sets weight of input text */
+    background-color: #fff; /* sets the color of the input box */
 }
+
+.black_font{
+    color: black;
+}
+
+/* End Sections */
+
+/* End Main */
+
+/* End Body */
