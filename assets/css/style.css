@@ -24,7 +24,7 @@ header{
 }
 
 #timer{
-    color: #432c58;
+    color: #432c58; /* sets text color */
 }
 
 /* End Header */
@@ -45,7 +45,7 @@ main{
 h1{
     font-size: 40px; /* sets the font size of the first heading */
     margin: 15px 0px 30px; /* applies margin around the first heading */
-    color: #0b4765;
+    color: #0b4765; /* sets text color */
 }
 
 p,
@@ -55,7 +55,7 @@ button{
 }
 
 p{
-    color: #c46517;
+    color: #c46517; /* sets text color */
 }
 
 img{
@@ -134,7 +134,7 @@ li{
 }
 
 .black_font{
-    color: black;
+    color: black; /* sets text color */
 }
 
 /* End Sections */
